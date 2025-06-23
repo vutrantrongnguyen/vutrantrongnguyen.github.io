@@ -1,4 +1,4 @@
----
+<!-- ---
 layout: default
 ---
 <link href="/css/override.css" rel="stylesheet" type="text/css">
@@ -27,4 +27,96 @@ layout: default
   </div>
 
   <a class="u-url" href="{{ page.url | relative_url }}" hidden></a>
-</article>
+</article> -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Nguyen Vu - Portfolio</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-900 text-white font-sans">
+  <!-- Header -->
+  <header class="bg-gray-800 shadow-lg">
+    <div class="container mx-auto px-4 py-6 flex justify-between items-center">
+      <h1 class="text-3xl font-bold text-teal-400">Nguyen Vu</h1>
+      <nav class="space-x-4">
+        <a href="#about" class="hover:text-teal-300">About</a>
+        <a href="#skills" class="hover:text-teal-300">Skills</a>
+        <a href="#projects" class="hover:text-teal-300">Projects</a>
+        <a href="#contact" class="hover:text-teal-300">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="text-center py-20 bg-gradient-to-r from-teal-500 to-indigo-600">
+    <h2 class="text-4xl md:text-5xl font-bold mb-4">Hi, I'm Nguyen Vu 👋</h2>
+    <p class="text-xl md:text-2xl">A passionate Developer crafting web experiences.</p>
+  </section>
+
+  <!-- About -->
+  <section id="about" class="py-16 px-6 md:px-12">
+    <div class="max-w-3xl mx-auto text-center">
+      <h3 class="text-3xl font-bold text-teal-400 mb-4">About Me</h3>
+      <p class="text-gray-300">
+        I'm a developer with experience in building full-stack web applications using technologies like
+        Python, JavaScript, React, and OutSystems. I love solving problems, learning new things, and collaborating
+        on impactful projects.
+      </p>
+    </div>
+  </section>
+
+  <!-- Skills -->
+  <section id="skills" class="bg-gray-800 py-16 px-6 md:px-12">
+    <div class="max-w-5xl mx-auto">
+      <h3 class="text-3xl font-bold text-teal-400 text-center mb-8">Skills</h3>
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-6 text-center text-gray-200">
+        <div class="p-4 bg-gray-700 rounded-lg">HTML & CSS</div>
+        <div class="p-4 bg-gray-700 rounded-lg">JavaScript / React</div>
+        <div class="p-4 bg-gray-700 rounded-lg">Python</div>
+        <div class="p-4 bg-gray-700 rounded-lg">OutSystems</div>
+        <div class="p-4 bg-gray-700 rounded-lg">Tailwind CSS</div>
+        <div class="p-4 bg-gray-700 rounded-lg">REST APIs</div>
+        <div class="p-4 bg-gray-700 rounded-lg">Git & GitHub</div>
+        <div class="p-4 bg-gray-700 rounded-lg">SQL / PostgreSQL</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects -->
+  <section id="projects" class="py-16 px-6 md:px-12">
+    <div class="max-w-5xl mx-auto">
+      <h3 class="text-3xl font-bold text-teal-400 text-center mb-8">Projects</h3>
+      <div class="grid gap-6 md:grid-cols-2">
+        <div class="bg-gray-800 p-6 rounded-lg shadow-md">
+          <h4 class="text-xl font-semibold mb-2">JLPT Exam Scraper</h4>
+          <p class="text-gray-300 mb-2">Python script to scrape JLPT exams from dethitiengnhat.com and save to Excel.</p>
+          <a href="#" class="text-teal-300 underline">View Code</a>
+        </div>
+        <div class="bg-gray-800 p-6 rounded-lg shadow-md">
+          <h4 class="text-xl font-semibold mb-2">OutSystems Quiz App</h4>
+          <p class="text-gray-300 mb-2">An adaptive quiz system built in OutSystems using dynamic questions and answers.</p>
+          <a href="#" class="text-teal-300 underline">View Demo</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="bg-gray-800 py-16 px-6 md:px-12">
+    <div class="max-w-3xl mx-auto text-center">
+      <h3 class="text-3xl font-bold text-teal-400 mb-6">Get In Touch</h3>
+      <p class="text-gray-300 mb-4">I'm open to freelance, full-time work, or just tech talk ☕.</p>
+      <a href="mailto:your.email@example.com" class="inline-block px-6 py-3 bg-teal-500 text-white rounded hover:bg-teal-600 transition">Email Me</a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="text-center text-gray-500 py-6 text-sm bg-gray-900 border-t border-gray-700">
+    © 2025 Nguyen Vu. Built with 💻 and ☕
+  </footer>
+</body>
+</html>
